@@ -11,30 +11,52 @@
     <div class="calculator">
         <p>FreeCodeCalc</p>
         <div class="calc-row">
-          <div class="screen"></div>
+          <div class="screen" id="screen"></div>
         </div>
         
         <div class="calc-row">
-          <div class="button">C</div>
+          <div class="button" id="C">C</div>
         </div>
         
         <div class="calc-row">
-          <div class="button">7</div><div class="button">8</div><div class="button">9</div><div class="button divice">/</div>
+          <div class="button" id="7" onclick="clickNumber()">7</div><div class="button" id="8">8</div><div class="button" id="9">9</div><div class="button divice" id="divice">/</div>
         </div>
         
         <div class="calc-row">
-          <div class="button">4</div><div class="button">5</div><div class="button">6</div><div class="button multiply">*</div>
+          <div class="button" id="4">4</div><div class="button" id="5">5</div><div class="button" id="6">6</div><div class="button multiply" id="multiply">*</div>
         </div>
         
         <div class="calc-row">
-          <div class="button">1</div><div class="button">2</div><div class="button">3</div><div class="button">-</div>
+          <div class="button" id="1">1</div><div class="button" id="2">2</div><div class="button" id="3">3</div><div class="button" id="minus">-</div>
         </div>
         
         <div class="calc-row">
-          <div class="button zero">0</div><div class="button decimal">.</div><div class="button">+</div><div class="button equal">=</div>
+          <div class="button zero" id="0">0</div><div class="button decimal" id=".">.</div><div class="button" id="plus">+</div><div class="button equal"id="equal">=</div>
         </div>
       </div>
-<script src="js/script.js"></script>
-</body>
+<!-- <script src="js/script.js"></script> -->
+<script>
+var numbers=[];
+
+var rezult=0;
+var screen=document.getElementById("screen");
+screen.innerHTML="0";
+plus.onclick = function() {
+  screen.innerHTML+="+";
+  };
+minus.onclick = function() {
+screen.innerHTML+="-";
+};
+C.onclick = function() {
+screen.innerHTML="0";
+};
+for(var i=0;i<10;i++){
+  number=document.getElementById(i);
+  number.onclick=function(){screen.innerHTML+=i;}
+}
+
+
+
+</script>
 </body>
 </html>
